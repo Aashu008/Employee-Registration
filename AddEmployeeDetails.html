@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Registration</title>
+<style>
+	 div.a {
+  text-align:center;
+  color : #3385ff;
+}
+.b{
+   text-align:center;
+   color:#660033;
+}
+.c{
+	text-align:center;
+	color:#00ccff;
+	background-color:black;
+
+}
+.c1{
+	text-align:"centre";
+	color:#006666;
+	background-color:black;
+}
+.d{
+	background-color:#ccffcc;
+}
+.e{
+	text-align:right;
+	color:red;
+	}
+	</style>b
+</head>
+<body>
+	<div class="a">
+	<h1>PLEASE ENTER YOUR CREDENTIALS</h1>
+	</div>
+	<form  class="b" name="myForm" action="submit.html" onsubmit="return submitPage()" >
+	
+		<fieldset class="d"  >
+				
+			<legend class="b"> Enter Employee Details here: </legend>
+			Employee ID<span style="color:red"><sup>*</sup></span>:<input type="text" id="EmployeeId" name="id" 
+				 placeholder="(AlphaNumeric Values Only)" required autofocus><span class="e" id="idPrint"></span>
+				 <br><br>
+			Employee Name<span style="color:red"><sup>*</sup></span>:<input type="text" id="EmployeeName" name="name"
+			 placeholder="(Alphabates and Spaces only)" required ><span id="namePrint"></span>
+			 <br><br>
+			Employee Gender<span style="color:red"><sup>*</sup></span>:<input type="radio" name="gender" required>Male <input
+				type="radio" name="gender" required>Female
+				<input  
+				type="radio" name="gender" required>Others<br><br>
+		    Employee Salary: <input id="EmployeeSalary"
+				type="number" value="Enter Salary" step=".01" name="salary"
+			     ><br><br>
+			Employee Age<span style="color:red"><sup>*</sup></span>:<input id="EmployeeAge" type="number"
+				name="age"  required><span id="agePrint"></span>
+				<br><br>
+			Is Employee FTE<span style="color:red"><sup>*</sup></span>:<select
+				name="isFTE" required>
+				<option selected>--nil--</option>
+				<option value="true">True</option>
+				<option value="false">False</option>
+			</select>
+		
+			 <br><br>
+			<!-- On the of Submit Button the alert will be prompted  -->
+			 
+			<input  class="c" type="submit">
+			<input class="c1" type="reset">
+				
+		</fieldset>
+		
+	</form>
+
+	<script type="text/javascript" src="EmployeeRegistration.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+INSERT INTO `training_schema`.`employee`
+(`EmployeeId`,
+`name`,
+`age`,
+`salary`,
+`isFTE`,
+`Gender`)
+VALUES
+(<{EmployeeId: }>,
+<{name: }>,
+<{age: }>,
+<{salary: }>,
+<{isFTE: }>,
+<{Gender: }>);
